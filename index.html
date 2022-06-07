@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple SI calculator</title>
+<link rel="stylesheet"  type="text/css" href="style.css">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="outer">
+    <h1 id="heading">Simple SI calculator</h1><br/>
+
+    <!--for inputs and names-->
+    <div id="inputs">
+        <form action="#">
+
+            <span class="enter">Enter Principal Amount</span><br>
+           <input type="number" id="principal-box" placeholder="Amount" ><br/><hr/>
+     
+           <span class="enter">Time period</span><br>
+      
+           <input type="number" max="4"  id="time-box" placeholder="Time"><br/><hr/>
+           
+              <span class="enter">Rate</span> <br>
+             
+               <input type="number" max="15" min="1" id="rate-box" placeholder="Rate"><br/><hr/>
+                
+               <input type="submit" class=" btn btn-primary" id = "sub-btn" value="Caculate">
+</form>
+
+    </div><hr>
+    <p id="res-desc">The SI after calculation is:</p><h4 id="result"></h4>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
